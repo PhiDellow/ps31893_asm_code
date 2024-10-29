@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Góp Ý Fplus</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        form {
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 400px; 
+            margin-bottom: 20px;
+            background: linear-gradient(to bottom, #007BFF, #FF7F50, #4CAF50);
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            display: block;
+            color: white; 
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px; 
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px; 
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px; 
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px; 
+            transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input:focus, textarea:focus {
+            border-color: #007BFF; /* Đổi màu viền khi focus */
+            outline: none; /* Bỏ outline */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Góp Ý Của Bạn</h2>
+<form action="/submit-feedback" method="POST">
+    <label for="name">Tên:</label>
+    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+
+    <label for="feedback">Nội dung góp ý:</label>
+    <textarea id="feedback" name="feedback" rows="6" placeholder="Nhập nội dung góp ý" required></textarea>
+
+    <button type="submit">Gửi Góp Ý</button>
+</form>
+
+<footer style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+    <div class="f-social" style="flex: 1; text-align: center;">
+        <p style="font-size: 20px; font-weight: bold;">Thông Tin Liên Hệ</p>
+        <div style="display: flex; justify-content: center; align-items: center; padding: 10px;">
+            <a href="https://www.facebook.com/phii.hoai" class="link-fb" style="display: flex; align-items: center; margin-right: 20px;">
+                <img src="img/logofacebook2.png" alt="Logo Facebook" style="margin-right: 5px; width: 18px; height: 18px;">
+                <span style="font-size: 15px;">Fanpage</span>
+            </a>
+            <a href="https://www.youtube.com/channel/UC0B2fsbmP_Tk-Ac62vjELdw/videos" class="link-ytb" style="display: flex; align-items: center; margin-right: 20px;">
+                <img src="img/logoytb2.png" alt="Logo YouTube" style="margin-right: 1px; width: 28px; height: 28px;">
+                <span style="font-size: 15px;">Fplus</span>
+            </a>
+            <a href="https://zalo.me/0374345692" class="link-zalo" style="display: flex; align-items: center;">
+                <img src="img/logozalo2.png" alt="Logo Zalo" style="margin-right: -2px; width: 34px; height: 32px;">
+                <span style="font-size: 15px;">Fplus</span>
+            </a>
+        </div>
+    </div>
+
+    <div style="flex: 1; text-align: center;">
+        <img src="img/logofptpolytechnic.png" alt="Logo FPT Polytechnic" style="width: 200px; height: auto; margin-bottom: 5px;">
+        <p style="margin: 0;">Copyright © Trần Nguyễn Hoài Phi_PS31893</p>
+        <p style="margin: 0;">Email: phitnhps31893@fpt.edu.vn</p>
+        <p style="margin: 0;">SĐT: 0374345692</p>
+    </div>
+</footer>
+
+</body>
+</html>
